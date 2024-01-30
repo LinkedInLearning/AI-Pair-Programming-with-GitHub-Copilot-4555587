@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MyApi.Data;
+using MyApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,4 +29,26 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<EmployeeContext>();
+    context.Database.EnsureCreated();
+
+    if (!context.Employees.Any())
+    {
+        context.Employees.Add(new Employee
+        {
+            Name = "John",
+            Age = 30,
+            YearsOfService = 5
+        });
+        context.Employees.Add(new Employee
+        {
+            Name = "Jane",
+            Age = 25,
+            YearsOfService = 3
+        });
+        context.SaveChanges();
+    }
+}
 app.Run();
