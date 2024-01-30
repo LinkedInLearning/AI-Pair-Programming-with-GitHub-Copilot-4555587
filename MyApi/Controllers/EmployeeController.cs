@@ -3,13 +3,18 @@ using MyApi.Data;
 using MyApi.Models;
 
 namespace MyApi.Controllers;
+
+/// <summary>
+/// EmployeeControllerクラスは、従業員のデータを管理します。
+/// これは、従業員の情報の取得、更新、削除などの操作を提供します。
+/// </summary>
 [ApiController]
 [Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+public class EmployeeController : ControllerBase
 {
     private readonly EmployeeContext _context;
 
-    public WeatherForecastController(EmployeeContext context)
+    public EmployeeController(EmployeeContext context)
     {
         _context = context;
     }
