@@ -1,3 +1,4 @@
-if [ -f requirements.txt ]; then
-  pip install --user -r requirements.txt
-fi
+#!/bin/sh
+
+cd MyApi
+dotnet add package Microsoft.EntityFrameworkCore.InMemory
