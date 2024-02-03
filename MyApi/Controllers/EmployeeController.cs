@@ -24,13 +24,4 @@ public class EmployeeController : ControllerBase
     {
         return _context.Employees.ToList();
     }
-
-    [HttpPost]
-    public ActionResult<Employee> Post(Employee employee)
-    {
-        _context.Employees.Add(employee);
-        _context.SaveChanges();
-
-        return CreatedAtAction(nameof(Get), new { id = employee.Id }, employee);
-    }
 }
