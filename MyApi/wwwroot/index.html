@@ -1,1 +1,36 @@
-test
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Employee Table</title>
+</head>
+
+<body>
+  <h1>Employee Table</h1>
+  <table id="employee-table">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Years of Service</th>
+    </tr>
+  </table>
+
+  <script>
+    // Fetch APIを使用してEmployeeデータを取得
+    fetch('/employee')
+      .then(response => response.json())
+      .then(data => {
+        const table = document.getElementById('employee-table');
+        // 取得したデータをテーブルに追加
+        data.forEach(employee => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `<td>${employee.id}</td><td>${employee.name}</td><td>${employee.age}</td><td>${employee.yearsOfService}</td>`;
+          table.appendChild(tr);
+        });
+      })
+      .catch(error => console.error('Error:', error));
+  </script>
+</body>
+
+</html>
