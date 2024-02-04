@@ -3,11 +3,28 @@
 
 <head>
   <title>Employee Table</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    .table-striped tr:nth-of-type(odd) {
+      background-color: #ffdddd;
+      /* ここに奇数行の色を指定 */
+    }
+
+    .table-striped tr:nth-of-type(even) {
+      background-color: #ddddff;
+      /* ここに偶数行の色を指定 */
+    }
+
+    #employee-table {
+      width: 70%; /* ここにテーブルの幅を指定 */
+      margin: auto; /* オプション: テーブルをページの中央に配置 */
+    }
+  </style>
 </head>
 
 <body>
   <h1>Employee Table</h1>
-  <table id="employee-table">
+  <table class="table table-striped table-condensed" id="employee-table">
     <tr>
       <th>ID</th>
       <th>Name</th>
