@@ -1,9 +1,12 @@
-# COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+# GitHub Copilotを使ったAIペアプログラミング
+This is the repository for the LinkedIn Learning course `GitHub Copilotを使ったAIペアプログラミング`. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![course-name-alt-text][lil-thumbnail-url] 
 
+ペアプログラミングとは２人組になりプログラミンを行う手法です。GitHub Copilotを利用することでAIと対話しながらペアプログラミングを行うことができます。このコースではGitHub Copilotを利用してWebアプリケーションを作成します。まずGitHub Copilotやペアプログラミングの概要を解説します。そしてGitHub Copilotを利用したプロジェクトの作成や、サーバーサイドのC#を使ったプログラミング、そしてフロントサイドのHTMLとJavaScriptで記述を行う方法を実演形式で紹介します。このコースを受講することで、GitHub Copilotを利用したアプリケーション開発の便利さを学ぶことができるでしょう。
+
 _See the readme file in the main branch for updated instructions and information._
+
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
 
@@ -22,15 +25,15 @@ To resolve this issue:
     Add changes to git using this command: git add .
 	Commit changes using this command: git commit -m "some message"
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+## インストラクター
+
+西村誠
+
+プログラマー、Microsoft MVP
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+[lil-course-url]: https://www.linkedin.com/learning/ai-pair-programming-with-github-copilot-24016247
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D4D0DAQH80lCwjjcNyg/learning-public-crop_675_1200/0/1718137261511?e=2147483647&v=beta&t=9oQuWU5MERlKMwoY2YmlJiQT4DXgqNGZLU4-jPjmJMo
 
