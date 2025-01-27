@@ -1,5 +1,5 @@
 # GitHub Copilotを使ったAIペアプログラミング
-This is the repository for the LinkedIn Learning course `GitHub Copilotを使ったAIペアプログラミング`. The full course is available from [LinkedIn Learning][lil-course-url].
+LinkedInラーニングの「GitHub Copilotを使ったAIペアプログラミング」コース用のリポジトリです。このコースは [LinkedInラーニング][lil-course-url]で視聴できます。
 
 ![course-name-alt-text][lil-thumbnail-url] 
 
@@ -7,23 +7,27 @@ This is the repository for the LinkedIn Learning course `GitHub Copilotを使っ
 
 _See the readme file in the main branch for updated instructions and information._
 
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+## リポジトリの使い方
+このリポジトリには必要に応じてブランチが設けられています。ブランチのポップアップメニューを使用して、使用するブランチに切り替えたあとにコースを視聴してください。またURLに`「/tree/ブランチ名」`を追加することで、アクセスしたいブランチに移動することも可能です。
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
+## ブランチ
+ブランチはレッスンごとに作成されている場合があります。その場合はブランチ名に`「章番号_レッスン番号」`が付けられています。例えば`「02_03」`という名前のブランチは、2章の上から3番目のレッスン用のブランチとなります。
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
+レッスン前と後のコードを格納しているブランチもあります。該当ブランチには「開始時」（beginning）を表す`「b」`と、「終了時」（ending）を表す`「e」` がブランチ名についています。`「b」`のブランチにはレッスン開始時点のコードが、`「e」`のブランチにはレッスン終了時点のコードが格納されています。また「main」のブランチにはコードの最終形が格納されています。
+
+ファイルに変更を加えた後に、エクササイズファイルのブランチを次のブランチに切り替えたさい、次のようなメッセージが表示されることがあります。
 
     error: Your local changes to the following files would be overwritten by checkout:        [files]
     Please commit your changes or stash them before you switch branches.
     Aborting
 
-To resolve this issue:
+この問題を解決するには：
 	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
+    次のコマンドで変更を加えます：git add .
+	次のコマンドで変更をコミットします：git commit -m "some message"
+
+ ## GitHub Codespacesについて
+プログラミング言語を学ぶ最良の方法は、実際にそれを使用することです。それがこのコースがGitHub Codespacesと統合されている理由です。GitHub Codespacesは、あなたが普段使っているIDEのすべての機能を提供するクラウド上の手軽な開発環境です。ローカルマシンのセットアップも必要ありません。 GitHub Codespacesを使えば、あなたが職場で使っている他のツールを使用しながら、どのパソコンからでもいつでもプログラミングの実践的な練習ができます。
 
 ## インストラクター
 
