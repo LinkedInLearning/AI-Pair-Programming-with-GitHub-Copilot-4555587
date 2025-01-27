@@ -5,8 +5,6 @@ LinkedInラーニングの「GitHub Copilotを使ったAIペアプログラミ�
 
 ペアプログラミングとは２人組になりプログラミンを行う手法です。GitHub Copilotを利用することでAIと対話しながらペアプログラミングを行うことができます。このコースではGitHub Copilotを利用してWebアプリケーションを作成します。まずGitHub Copilotやペアプログラミングの概要を解説します。そしてGitHub Copilotを利用したプロジェクトの作成や、サーバーサイドのC#を使ったプログラミング、そしてフロントサイドのHTMLとJavaScriptで記述を行う方法を実演形式で紹介します。このコースを受講することで、GitHub Copilotを利用したアプリケーション開発の便利さを学ぶことができるでしょう。
 
-_See the readme file in the main branch for updated instructions and information._
-
 ## リポジトリの使い方
 このリポジトリには必要に応じてブランチが設けられています。ブランチのポップアップメニューを使用して、使用するブランチに切り替えたあとにコースを視聴してください。またURLに`「/tree/ブランチ名」`を追加することで、アクセスしたいブランチに移動することも可能です。
 
